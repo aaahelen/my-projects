@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <title>Обижаем Лермонтова</title>
+		<style>
+		    .italic {
+			    font-style: italic;
+				color: green;
+			}
+		    .bold {
+			    font-weight: bold;
+			}
+		    .line {
+			text-decoration-line: underline;
+			color: #66CDAA;
+			}
+		    .line1 {
+			text-decoration-line:  line-through;
+			}
+			.size {
+			font-size: 12px;
+			color: #9ACD32;
+			}
+		</style>
+    </head>
+    <body>
+<!--
+1) Заменяем все теги внутри <p> на <span>. Кроме <br>, разумеется.
+2) Добавляем к спанам классы и иды по потребности и прописываем стили.
+3) Текст в спанах со стилями должен выглядеть так же, как теги <b>, <i>, <strong>, <em>, <s>, <small> сейчас.
+4*) Можно раскрасить в разные цвета по вашему вкусу.
+-->
+        <h1>Михаил Лермонтов</h1>
+        <h2><a href="https://www.culture.ru/poems/37119/parus">Парус</a></h2>
+        <p><span class="italic">Белеет</span> <span class="bold">парус</span> одинокой<br>
+        В тумане моря <span class="italic">голубом</span>!..<br>
+        <span class="italic">Что</span> ищет <span class="bold">он</span> в стране <span class="size">далекой</span>?<br>
+        <span class="italic">Что</span> кинул <span class="bold">он</span> в краю <span class="size">родном</span>?..</p>
+        
+        <p>Играют <span class="bold">волны</span> — <span class="bold">ветер</span> свищет,<br>
+        И <span class="bold">мачта</span> гнется и скрыпит…<br>
+        Увы! <span class="line">Он счастия не ищет<br>
+        И не от счастия бежит!</span></p>
+        
+        <p><span class="line1">Под ним струя <span class="italic">светлей лазури</span>,<br>
+        Над ним луч солнца <span class="italic">золотой</span>…</span><br>
+        А он, мятежный, просит бури,<br>
+        <span class="italic">Как будто</span> в бурях есть покой!</p>
+        
+        <h6>1832 г.</h6>
+    </body>
+</html>
