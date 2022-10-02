@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        
+        <title>Flex-chess 1</title>
+        
+        <style>
+           
+			.lightgray {
+			    outline: 1px solid black;
+                width: 920px;
+				height: 920px;
+                background: lightgray;
+				display: flex;
+			    flex-direction: column;
+            }
+            .top {
+		       height: 52px;
+		       display: flex;
+			   justify-content: center;
+			   flex-wrap: nowrap;
+			   }
+			.abc1 {
+			   height: 52px;
+			   width: 102px;
+			   display: flex;
+			   justify-content: center;
+               align-items: center;
+			} 
+			.bottom {
+			    height: 52px;
+		        display: flex;
+				  
+			    justify-content: center;
+                flex-wrap: wrap;
+               }
+			.abc2 {
+			    height: 52px;
+			    width: 102px;
+			    display: flex;
+			    justify-content: center;
+                align-items: center;
+			}
+			.a {
+			    height: 52px;
+				width: 52px;
+				display: flex;
+			}
+			.b {
+			    height: 52px;
+				width: 52px;
+				display: flex;
+			}
+		    
+			.numberleft {
+			    flex: 0 0 52px;
+			    display: flex;
+				justify-content: center;
+                align-items: center;
+			}
+			.numberright {
+			    flex: 0 0 52px;
+			    display: flex;
+			    justify-content: center;
+                align-items: center;
+				flex-flow: column wrap;
+			}
+			.field {
+			    display: flex;
+				flex-wrap: wrap;
+				justify-content: center;
+			}
+			.gray {
+			    flex: 0 0 102px;
+                height: 102px;
+                background: gray;
+                font-size: 60px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+			}
+		   .white {
+		        flex: 0 0 102px;
+                height: 102px;
+                background: white;
+                font-size: 60px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+		   }
+			
+		       
+        </style>
+    </head>
+    
+    <body>
+        <div class="lightgray">
+		    <div class="top">
+                <div class="a"></div>
+                <div class="abc1">A</div>
+                <div class="abc1">B</div>
+                <div class="abc1">C</div>
+                <div class="abc1">D</div>
+                <div class="abc1">E</div>
+                <div class="abc1">F</div>
+                <div class="abc1">G</div>
+                <div class="abc1">H</div>
+                <div class="a"></div>
+            </div>
+			<div class="field">
+			    <div class="numberleft">8</div>
+                <div class="white">&#9820;</div>
+                <div class="gray">&#9822;</div>
+                <div class="white">&#9821;</div>
+                <div class="gray">&#9819;</div>
+                <div class="white">&#9818;</div>
+                <div class="gray">&#9821;</div>
+                <div class="white">&#9822;</div>
+                <div class="gray">&#9820;</div>
+                <div class="numberright">8</div>
+            
+                <div class="numberleft">7</div>
+                <div class="gray">&#9823;</div>
+                <div class="white">&#9823;</div>
+                <div class="gray">&#9823;</div>
+                <div class="white">&#9823;</div>
+                <div class="gray">&#9823;</div>
+                <div class="white">&#9823;</div>
+                <div class="gray">&#9823;</div>
+                <div class="white">&#9823;</div>
+                <div class="numberright">7</div>
+            
+                <div class="numberleft">6</div>
+                <div class="white"></div>
+                <div class="gray"></div>
+                <div class="white"></div>
+                <div class="gray"></div>
+                <div class="white"></div>
+                <div class="gray"></div>
+                <div class="white"></div>
+                <div class="gray"></div>
+                <div class="numberright">6</div>
+            
+                <div class="numberleft">5</div>
+                <div class="gray"></div>
+                <div class="white"></div>
+                <div class="gray"></div>
+                <div class="white"></div>
+                <div class="gray"></div>
+                <div class="white"></div>
+                <div class="gray"></div>
+                <div class="white"></div>
+                <div class="numberright">5</div>
+            
+                <div class="numberleft">4</div>
+                <div class="white"></div>
+                <div class="gray"></div>
+                <div class="white"></div>
+                <div class="gray"></div>
+                <div class="white"></div>
+                <div class="gray"></div>
+                <div class="white"></div>
+                <div class="gray"></div>
+                <div class="numberright">4</div>
+            
+                <div class="numberleft">3</div>
+                <div class="gray"></div>
+                <div class="white"></div>
+                <div class="gray"></div>
+                <div class="white"></div>
+                <div class="gray"></div>
+                <div class="white"></div>
+                <div class="gray"></div>
+                <div class="white"></div>
+                <div class="numberright">3</div>
+            
+                <div class="numberleft">2</div>
+                <div class="white">&#9817;</div>
+                <div class="gray">&#9817;</div>
+                <div class="white">&#9817;</div>
+                <div class="gray">&#9817;</div>
+                <div class="white">&#9817;</div>
+                <div class="gray">&#9817;</div>
+                <div class="white">&#9817;</div>
+                <div class="gray">&#9817;</div>
+                <div class="numberright">2</div>
+            
+                <div class="numberleft">1</div>
+                <div class="gray">&#9813;</div>
+                <div class="white">&#9816;</div>
+                <div class="gray">&#9815;</div>
+                <div class="white">&#9813;</div>
+                <div class="gray">&#9812;</div>
+                <div class="white">&#9815;</div>
+                <div class="gray">&#9816;</div>
+                <div class="white">&#9813;</div>
+                <div class="numberright">1</div>
+            </div>
+			<div class="bottom">
+                <div class="b"></div>
+                <div class="abc2">A</div>
+                <div class="abc2">B</div>
+                <div class="abc2">C</div>
+                <div class="abc2">D</div>
+                <div class="abc2">E</div>
+                <div class="abc2">F</div>
+                <div class="abc2">G</div>
+                <div class="abc2">H</div>
+                <div class="b"></div>
+			</div>
+        </div>
+		        
+
+    </body>
+</html>

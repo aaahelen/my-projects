@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        
+        <title>Flex</title>
+        
+        <style>
+		 html {
+		     height: 100%;
+		 }
+		 
+		 body {
+		     margin: 0;
+			 height: 100%;
+		 
+		 }
+            container: {
+			    background: pink;
+				min height: 100%;
+				display: flex;
+				flex-direction: column;
+			
+			}
+            
+            .red {
+                background: red;
+				height: 100px;
+				flex: none;
+               
+            }
+            .green {
+                background: green;
+                flex: auto;
+            }
+            .blue {
+                background: blue;
+                flex: 0 0 300px;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <div class="container">
+            <div class="blue"></div>
+            <div class="red"></div>
+            <div class="green"></div>
+		
+		</div>
+		
+    </body>
+</html>
