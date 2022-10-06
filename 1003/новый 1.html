@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        
+        <title>Grid Areas</title>
+        
+        <style>
+            body {
+                margin: 0;
+            }
+            .grid {
+                background: lightgray;
+                width: 800px;
+                height: 600px;
+				display: grid;
+				grid-template-columns: repeat(4, 1fr);
+				grid-template-rows: repeat(3, 1fr);
+				grid-template-areas: 'q q q q' 'w w . e' 'r r r r'
+			}
+			
+            .blue {
+                background: blue;
+				grid-area: q;
+            }
+            .red {
+                background: red;
+				grid-area: e;
+            }
+            .green {
+                background: green;
+				grid-area: r;
+            }
+            .yellow {
+                background: yellow;
+				grid-area: w;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <div class="grid">
+            <div class="blue"></div>
+            <div class="red"></div>
+            <div class="green"></div>
+            <div class="yellow"></div>
+        </div>
+    </body>
+</html>

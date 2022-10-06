@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        
+        <title>Transforms</title>
+        
+        <style>
+			div {
+			    width: 200px;
+				height: 200px;
+				background: pink;
+				margin: 150px;
+				border: 1px solid black;
+				font-size: 30px;
+				position: absolute;
+				opacity: .5;
+				transform-origin: left top;
+			}
+			.transed {
+				
+				transform: rotateY(180deg);
+			}	
+            .raw {
+				
+				transform: rotateY(0deg);
+			}	
+			body:hover .transed {
+			    transform: rotateY(0deg);
+			}
+			body:hover .raw {
+			    transform: rotateY(180deg);
+			}
+        </style>
+    </head>
+    
+    <body>
+        <div class="transed">qwerty</div>
+        <div class="raw">123456</div>
+            
+            
+        
+    </body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        
+        <title>Grid</title>
+        
+        <style>
+            .grid {
+                display: grid;
+                background: pink;
+				width: 800px;
+				height: 800px;
+				grid-template-columns: 200px 1fr 1fr 1fr; 
+            }
+			.grid > div {
+				width: 200px;
+				height: 200px;
+            }
+            .red {
+                background: red;
+                
+            }
+            .green {
+                background: green;
+                
+            }
+            .blue {
+                background: blue;
+               
+            }
+			
+            .black {
+                background: black;
+               
+            }
+			
+            .yellow {
+                background: yellow;
+               
+            }
+        </style>
+    </head>
+    
+    <body>
+        <div class="grid">
+            <div class="red">1</div>
+            <div class="blue">2</div>
+            <div class="green">3</div>
+            <div class="black">1</div>
+            <div class="yellow">2</div>
+            
+        </div>
+    </body>
+</html>

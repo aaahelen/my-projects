@@ -1,0 +1,37 @@
+/*global resets*/
+html, body, body div, span, label, h1, h2, h3, h4, h5, h6, p, a, em, img, s, strong, b, u, i, dl, dt, dd, ol, ul, li, button, article, aside, footer, header, nav, section, input {
+	margin: 0;
+	padding: 0;
+	border: none;
+	outline: none;
+	background: none;
+	list-style: none;
+}
+html * {
+	max-height: 10000000px;
+	
+}
+/*commons*/
+a {
+	text-decoration: none;
+}
+button {
+	cursor: pointer;
+}
+.hidden_element {
+	display: none !important;
+}
+/*html*/
+html {
+	height: 100%;
+}
+body {
+	height: 100%;
+	fonts: 
+	background: 
+}
+.wrapper {
+	max-width: 1600px;
+	margin: 0 auto;
+	display: flex;
+}
