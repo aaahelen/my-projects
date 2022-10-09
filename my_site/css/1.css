@@ -36,14 +36,14 @@ html * {
 body {
     
     font: 100 normal 20px/30px 'Roboto';
-    background: #f7f7f7;
+    background: #eef1f1;
     height: 100%;
     display: flex;
     flex-direction: column;
 }
 header {
-    border-bottom: 1px solid #aebcd2;
-    background: #a3b0c5;
+    border-bottom: 1px solid #bac3d1;
+    background: #b4bac5;
     height: 50px;
     text-align: center;
     padding-top: 18px;
@@ -94,7 +94,7 @@ h1 {
 }
 .right-info  {
     background: rgb(220, 195, 218);
-    margin: 10px 10px 30px 500px;
+    margin: 30px 10px 30px 500px;
     padding: 30px;
     font-size: 20px;
     line-height: 30px;
@@ -107,7 +107,7 @@ h1 {
     transition: 1s; 
 }
 .right-info-2 {
-    background: #F0FFFF;
+    background: #dee3e4;
     padding: 30px;
     font-size: 20px;
     border: 1px solid #333;
@@ -129,8 +129,8 @@ main {
     flex: 1 1 auto;
 }
 main img {
-    margin-left: 30px;
-    width: 389px;
+    margin: 50px;
+    width: 300px;
     border-radius: 5%;
     float: left;
 }
