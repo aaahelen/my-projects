@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        
+        <title>Deep function</title>
+		
+        <script>
+			function anotherfunc() {
+			    let counter  = 0;
+				function myfunc() {
+				    alert (‘Done ${counter++}!`);
+				}
+				return myfunc;
+			}
+			
+			let func = 	anotherfunc();
+			
+			func();
+					
+		</script>
+        
+    </head>
+    
+    <body>
+       
+		
+    </body>
+</html>

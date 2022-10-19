@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        
+        <title>Убегающий блок</title>
+
+		<style>
+			.outer {
+				width: 498px;
+				height: 498px;
+				margin: 100px;
+				background: pink;
+				position: relative;
+	 
+			.inner {
+				width: 48px;
+				height: 48px;
+				background: green;
+				position: absolute;
+				top: 224px;
+				left: 224px;
+			
+			div {
+				border: 1px solid black;
+			}
+			body {
+				margin: 0;
+			}	
+		</style>
+		
+		<script>
+			document.addEventListener("DOMContentLoaded", function(){
+			let deltaX = 101, deltay = 101, width = 49;
+			 
+			let block = document .querySelector ("
+
+			block.addEventListener('mouseover', (e) => {
+			let left = block.getBoundingClientRect () .left;
+			let top = block.getBoundingClientRect () . top;
+				console.log(e.x, e.y);
+				console.log(left, top);
+			if (Math.abs(e.x - left) <= 15) {
+				console. log('LEFT');
+			let newposition = left - deltaX + 25;
+			if (newposition > 448) newposition = 448;
+				block.style.left = newposition + 'px';
+			} else if (Math.abs(e.x - left - width) <= 15) {
+				console.log('RIGHT');
+			let newposition = left - deltaX + 25;
+			
+			if (newposition > 448) newposition = 448;
+				block.style.left = newposition + 'px';
+
+			if (Math.abs(e.y - top) <= 15) {
+			console.log('TOP');
+
+			} else if (Math.abs(e.y - top - width) <= 5) {
+			console.log ("BOTTOM") ;
+
+		});
+	});
+
+		</script>
+	</head>
+
+	<body>
+		<div class="outer">
+			<div class="inner"></div>
+		</div>
+    
+	</body>
+</html>

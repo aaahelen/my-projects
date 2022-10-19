@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        
+        <title>Deep function</title>
+		
+        <script>
+            
+			let arr = ['red', 'green', 'blue', 'yellow', 'black'];
+				console.log (arr);
+				
+			let res = arr.filter (function (element, indexOfElement, wholeArray) {
+				 console.log ('===');
+				 console.log ('This color is ' + element);
+				//console.log(element.slice(0,2) == 'bl');
+				 console.log(element.lenght - 4);
+				 console.log ('===');
+				 return element.lenght - 4;
+			})
+			 
+			console.log (res); 
+
+
+				
+		</script>
+        
+    </head>
+    
+    <body>
+       
+		
+    </body>
+</html>

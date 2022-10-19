@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        
+        <title>Deep function</title>
+		
+        <script>
+		    function allsum(...args) {
+			
+			    args_mapped = args.map(item => parseInt(item));
+			    args_filtered = args_mapped.filter(item => !isNaN((item));
+			   
+ 			    console.log(args_filtered);
+				
+				let result = null;
+				
+				if (args_filtered.lenght) {
+				    result = args_filtered.reduce((sum, item) => item + sum, 0)
+				}
+				
+				
+				return result;
+			}
+			
+			console.log(allsum(1, 2, 3, '55', '77ы', 0));
+			
+			console.log(allsum('q', 'w', 'e', 0));
+			
+			console.log(allsum('q', 'w', 'e'));
+		</script>
+        
+    </head>
+    
+    <body>
+       
+		
+    </body>
+</html>

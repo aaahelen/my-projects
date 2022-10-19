@@ -1,0 +1,38 @@
+Для всех узлов: parentNode, childNodes, firstChild, lastChild, previousSibling, nextSibling.
+
+Только для узлов-элементов (с nodeType == 1): parentElement, children, firstElementChild, lastElementChild, previousElementSibling, nextElementSibling.
+
+document.getElementById(id)
+
+document.getElementsByName(name)
+elem.getElementsByTagName(tag)
+elem.getElementsByClassName(class)
+
+elem.querySelector(css_selector)
+
+elem.querySelectorAll(css_selector)
+
+elem.hasAttribute(name) – проверить на наличие.
+elem.getAttribute(name) – получить значение.
+elem.setAttribute(name, value) – установить значение.
+elem.removeAttribute(name) – удалить атрибут.
+elem.attributes – это коллекция всех атрибутов.
+
+node.append(...nodes or strings) - добавляет узлы или строки в конец node,
+node.prepend(...nodes or strings) - вставляет узлы или строки B начало node,
+node.before(...nodes or strings) -- вставляет узлы или строки до node,
+node.after(...nodes or strings) -- вставляет узлы или строки nocne node
+node.replaceWith(...nodes or strings) -- заменяет node заданными узлами или строками.
+
+innerHTML - внктреннее содержимое
+outerHTML - внктреннее содержимое и сам тег
+
+elem.insertAdjacentHTML(where, html)
+ 
+where:
+"beforebegin" - вставить html Henocpegcrsenno nepex elem,
+"afterbegin" - вставить html в начало elem,
+"beforeend" - вставить html в конец elem,
+"afterend" - вставить html непосредственно после elem.
+elem.insertAdjacentElement(where, elem)
+

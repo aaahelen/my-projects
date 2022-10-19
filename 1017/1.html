@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        
+        <title>Свойства и атрибуты</title>
+        
+        <style>
+            .outer {
+                width: 600px;
+                height: 600px;
+                margin: 100px;
+                background: pink;
+            }
+            .red {
+                width: 100px;
+                height: 100px;
+                background: red;
+            }
+			.green {
+				width: 100px;
+                height: 100px;
+                background: green;
+			}
+            .blue {
+                width: 200px;
+                height: 200px;
+                margin: 100px;
+				background: blue;
+            }
+        </style>
+    </head>
+		<body>
+			<div class ="outer">
+			<div class="red"></div>
+			<!-- before replaceWith emecro!!! -->
+			<div class="blue">
+			<!-- prepend -->
+			Borasnsem coma
+			<!-- append -->
+			</div>
+			<!-- after -->
+			</div>
+
+
+	<script>
+	
+			let first = document .querySelector('.outer');
+			let red = document .querySelector('.red');
+			let blue = document .querySelector('.blue');
+
+
+
+			let green = document.createElement('div');
+			green.className = 'green';
+			blue.replaceWith(green) ;
+
+			().forEach.apply(document.('div'),[tem => item.style.border = '1px dotted black']);
+			().forEach.apply(document.('div'),[item => item.title = item.className]);
+
+			//blue.replaceWith (green) ;
+
+			 
+           
+        </script>
+    </body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        
+        <title>Copy Objects</title>
+		
+        <script>
+		   function deep_copy(arg) {
+		       let res = {};
+			   for (let prop in arg) {
+			       if(typeof arg[prop] == 'object' && arg[prop] !== null)  {
+				       res[prop] = deep_copy(arg[prop])
+				   } else {
+				       res[prop] = arg[prop];
+				   }
+			   }
+			   return res;
+		   }
+		   
+		   let a = {
+		       a1: 10,
+		       a2: 15,
+		       a3: {
+			       b1: 22,
+			       b2: 33,
+				   b4: {
+				       c1: '123'
+				   }
+			   
+			   }
+		   
+		   };
+		</script>
+        
+    </head>
+    
+    <body>
+       
+		
+    </body>
+</html>
