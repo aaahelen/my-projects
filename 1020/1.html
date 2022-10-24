@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        
+        <title>Objects, classes</title>
+
+		<style>
+			
+		</style>
+		
+		<script>
+			 function Animal (name, food) {
+				this.name = name;
+				this.food = food;
+				this.gender = (this.name =='cow') ? 'She' : 'He';
+				this.test = function() {
+					console.log(`This is ${this.name}. He eats ${this.food}.`);
+
+				}
+			}
+			
+			let cat = new Animal('cat', 'milk');
+			let dog = new Animal('dog', 'meat');
+			let cow = new Animal('cow', 'grass');
+			
+				
+		</script>
+	</head>
+
+	<body>
+		
+	</body>
+</html>
