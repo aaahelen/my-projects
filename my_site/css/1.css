@@ -72,7 +72,7 @@ h1 {
     font-size: 40px;
     line-height: 50px;
     font-weight: 300;
-    margin: 50px 0 75px;
+    margin: 20px;
 }
 
 .top {
@@ -89,7 +89,7 @@ h1 {
 }
 .content {
     width: 1200px;
-    margin: 0 auto 100px;
+    margin: 0 auto 30px;
     overflow: hidden;
 }
 .right-info  {
@@ -142,8 +142,8 @@ main img {
 }
 footer {
     background-color: #7a5889;
-    height: 140px;
+    height: 75px;
     color: #a4a4a4;
-    line-height: 140px;
+    
     flex: none;
 }
