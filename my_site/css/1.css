@@ -140,6 +140,9 @@ main img {
 .scale:hover {
     transform: scale(1.1); 
 }
+p {
+	margin: 20px;
+}
 footer {
     background-color: #7a5889;
     height: 75px;
