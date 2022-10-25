@@ -33,8 +33,11 @@ html * {
 }
 
 /* common */
+html {
+	height: 100%;
+}
 body {
-    
+    margin: 0;
     font: 100 normal 20px/30px 'Roboto';
     background: #eef1f1;
     height: 100%;
@@ -79,17 +82,13 @@ h1 {
     min-width: 1200px;
     text-align: center;
 }
-.center {
-    min-width: 1200px;
-    text-align: center;
-}
+
 .bottom {
     min-width: 1200px;
     text-align: center;
 }
 .content {
     width: 1200px;
-    margin: 0 auto 30px;
     overflow: hidden;
 }
 .right-info  {
@@ -126,7 +125,8 @@ h1 {
     transform: scale(1.1);
 }
 main {
-    flex: 1 1 auto;
+    flex: 1 1 100%;
+    text-align: center;
 }
 main img {
     margin: 50px;
@@ -145,8 +145,7 @@ p {
 }
 footer {
     background-color: #7a5889;
-    height: 75px;
     color: #a4a4a4;
-    
     flex: none;
+	height: 80px;
 }
