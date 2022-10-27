@@ -92,8 +92,9 @@ h1 {
     overflow: hidden;
 }
 .right-info  {
+    display: flex;
     background: rgb(220, 195, 218);
-    margin: 30px 10px 30px 500px;
+    margin: 30px auto;
     padding: 30px;
     font-size: 20px;
     line-height: 30px;
@@ -106,6 +107,7 @@ h1 {
     transition: 1s; 
 }
 .right-info-2 {
+    display: flex;
     background: #dee3e4;
     padding: 30px;
     font-size: 20px;
@@ -114,7 +116,7 @@ h1 {
     line-height: 30px;
     text-align: left;
     width: max-content;
-    margin: 10px 10px 30px 550px;
+    margin: 30px auto;
     box-shadow: 1px 1px 5px 5px rgb(0 0 0 / 50%);
     transition: 1s; 
 }

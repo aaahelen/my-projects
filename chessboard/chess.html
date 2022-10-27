@@ -4,11 +4,10 @@
         <meta charset="utf-8">
         
         <title>Шахматы</title>
-		
+        
         <link rel="stylesheet" href="style.css">
-		
-		<script src="main.js"></script>
-		
+        
+        <script src="main.js"></script>
     </head>
     
     <body>
@@ -115,7 +114,7 @@
                 <td></td>
                 <td></td>
                 <td></td>
-                <td>&#9812;</td>
+                <td></td>
                 <td></td>
                 <td></td>
                 <td></td>
@@ -134,24 +133,5 @@
                 <th></th>
             </tr>
         </table>
-        
-        <script>
-            let arr = document.querySelectorAll('td');
-            document.querySelector('table').addEventListener('click', function(event) {
-                //console.log(this);
-                //console.log(event.target);
-                //console.dir(event.target);
-                //console.log([].indexOf.call(arr, event.target));
-                if (event.target.tagName.toLowerCase() == 'td') {
-                    let idx = [].indexOf.call(arr, event.target);
-                    //let vert = 8 - Math.floor(idx / 8);
-                    //let vert = '87654321'[Math.floor(idx / 8)];
-                    let vert = [8, 7, 6, 5, 4, 3, 2, 1][Math.floor(idx / 8)];
-                    let hor = 'ABCDEFGH'[idx % 8];
-                    //let hor = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H'][idx % 8];
-                    console.log(hor + vert);
-                }
-            });
-        </script>
     </body>
 </html>

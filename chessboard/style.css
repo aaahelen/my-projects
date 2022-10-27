@@ -4,24 +4,30 @@ table {
     width: 920px;
 }
 td {
-	height: 100px;
+    height: 100px;
     width: 100px;
     text-align: center;
     font-size: 60px;
 }
-	tr:nth-child(even) td:nth-child(odd),
-	tr:nth-child(odd) td:nth-child(even) {
-	background: gray;
+tr:nth-child(even) td:nth-child(odd),
+tr:nth-child(odd) td:nth-child(even) {
+    background: gray;
 }
 th {
-	background: lightgray;
+    background: lightgray;
 }
 tr:first-child th, tr:last-child th {
-	height: 50px;
+    height: 50px;
 }
 th:first-child, th:last-child {
-	width: 50px;
+    width: 50px;
 }
 .td {
-	background: gray;
+    background: gray;
+}
+.cellfrom {
+    outline: 3px dashed yellow;
+}
+.cellto {
+    outline: 3px dashed pink;
 }
